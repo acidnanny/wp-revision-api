@@ -1,0 +1,23 @@
+{
+    "name" : "dpress/dpress-revisions",
+    "type" : "wordpress-plugin",
+    "require" : {
+        "dannycain/dpress/core": "dev-master",
+        "danny.cain/datalayer" : "^1.0",
+        "composer/installers" : "v1.0.6",
+        "dannycain/dpress" : "dev-master"
+    },
+    "repositories" : [
+        {
+            "type" : "git",
+            "url" : "git@gitlab.com:dpress/core/core.git"
+        },
+        {
+            "type" : "git",
+            "url" : "git@rincewind.dannycain.com:wordpress/dpress"
+        }
+    ],
+    "autoload" : {
+        "files" : [ "classes/include.php" ]
+    }
+}
