@@ -7,7 +7,6 @@ Plugin Name: DPress Revisions
 Text Domain: dpress
 */
 
-DPressAutoload("DPress\\Revisions\\", __DIR__.'/classes/');
 spl_autoload_register(function($class) {
 	$namespace = 'DPress\\Revisions\\';
 	$path = __DIR__.DIRECTORY_SEPARATOR.'classes'.DIRECTORY_SEPARATOR;
